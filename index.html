@@ -12,84 +12,21 @@
 		 <meta name="description" content="html factory">
 		 <meta name="author" content="searobbers">
 
-<style>
-
- *{  
-
-            margin: 0px;  
-
-            padding: 0px;  
-
-        }  
-
-        video{  
-
-            position: fixed;  
-
-            right: 0px;  
-
-            bottom: 0px;  
-
-            min-width: 100%;  
-
-            min-height: 100%;  
-
-            height: auto;  
-
-            width: auto;  
-
-            /*加滤镜*/
-
-            /*filter: blur(15px); //背景模糊设置 */
-
-            /*-webkit-filter: grayscale(100%);*/  
-
-            /*filter:grayscale(100%); //背景灰度设置*/  
-
-            z-index:-11
-
-        }  
-
-        source{  
-
-            min-width: 100%;  
-
-            min-height: 100%;  
-
-            height: auto;  
-
-            width: auto;  
-
-        } 
-
-		p{
-
-		    width: 100%;
-
-			text-align: center;
-
-			font-size: 40px;
-
-			color: white;
-
-		}
-
-             </style>
-
-             <body>
-
-
-              <video autoplay loop muted>
-
-            <source src="./movie.mp4" type="video/mp4"  />
-
-            Your browser does not support the video tag.
-
-              </video>
-
- 
-
-           </body>
+             body{
+                /* 加载背景图片 */
+				background-image: url(https://ae01.alicdn.com/kf/H94c59791281045cd962f8d4199c3c872M.gif);
+				/* 背景图垂直、水平均居中 */
+				background-position: center center;
+                /* 背景图不平铺 */
+                background-repeat: no-repeat;
+                /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+                background-attachment: fixed;  /*此条属性必须设置否则可能无效*/
+                /* 让背景图基于容器大小伸缩 */
+                background-size: cover;
+			}
+ ———————————————— 
+版权声明：本文为CSDN博主「江西师范大学-16-吴悠」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_39905917/article/details/90647317
 	     <!-- 
              定义背景
              -->
